@@ -1,17 +1,17 @@
-# Dictionaries
-    # Program that takes input as numbers then
-    # displays them in words.
+# person class
+# with a name attribute
+# with a talk method
 
-phone = input("Phone: ")
+class Person:
+    def __init__(self, name):
+        self.name = name
 
-digits_mapping = {
-    "1": "One",
-    "2": "Two",
-    "3": "Three",
-    "4": "Four"
-}
+    def talk(self):
+        print(f"Hi, I am {self.name}")
 
-output = ""
-for ch in phone:
-    output += digits_mapping.get(ch, "!") + " "
-print(output)
+john = Person("Won Lee")
+john.talk()
+# print(john.name)
+
+myOtherFriend = Person("My other friend")
+myOtherFriend.talk()
