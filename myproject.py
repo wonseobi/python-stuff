@@ -1,8 +1,8 @@
 # Project
 # Calculates in % my progress for six months in the gym ;D
 from time import sleep
-progress = 23.24
-print("Hello Won, today's date: 18/3/25")
+progress = 28.22
+print("Hello Won, today's date: 20/3/25")
 answer = input("Did you assist today? (Y/N) ").upper()
 
 if answer == "Y":
@@ -23,4 +23,5 @@ elif answer == "N":
     print("Missing once is a mistake, missing twice is the start of a new habit")
     sleep(3)
     print("See you tomorrow :)")
-
+else:
+    print("Unknown input")
